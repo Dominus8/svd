@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap");
+.section_wrappper .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  background-color: #868686;
+}
+
+.section_wrappper .header .logo {
+  padding-top: 10px;
+}
+
+.section_wrappper .header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+.section_wrappper .header .nav ul li {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+  list-style-type: none;
+  margin-right: 13px;
+}
+
+.section_wrappper .body {
+  height: 980px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper {
+  height: 93vh;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .about .about_top {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50%;
+  background-color: #FFED00;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .about .about_top .about_top-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: 18px;
+  max-width: 500px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .about .about_top .about_top-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 70px;
+  max-width: 500px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .about .about_bot {
+  height: 50%;
+  background: url("/image/bot_bg.png") top center/cover;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .about .about_bot .big_logo_about {
+  padding-top: 35px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .we_can .we_can_top {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50%;
+  background-color: #FFED00;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .we_can .we_can_top .we_can_top-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: 18px;
+  max-width: 500px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .we_can .we_can_top .we_can_top-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 70px;
+  max-width: 500px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .we_can .we_can_bot {
+  height: 50%;
+  background: url("/image/we_can_bg.png") top center/cover;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_top {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50%;
+  background-color: #FFED00;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_top .services_top-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: 18px;
+  max-width: 500px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_top .services_top-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 70px;
+  max-width: 500px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_top .services_top-subtitle span {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot {
+  height: 50%;
+  background: url("/image/services_bg.png") top center/cover;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .contacts .contacts_top {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50%;
+  background-color: #FFED00;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .contacts .contacts_top .contacts_top-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: 18px;
+  max-width: 500px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .contacts .contacts_top .contacts_top-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 70px;
+  max-width: 500px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .contacts .contacts_top .contacts_top-subtitle a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .contacts .contacts_bot {
+  height: 50%;
+  background: url("/image/contacts_bg.png") top center/cover;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .partners .partners_top {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50%;
+  background-color: #FFED00;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .partners .partners_top .partners_top-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: 18px;
+  max-width: 500px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .partners .partners_top .partners_top-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 70px;
+  max-width: 500px;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .partners .partners_top .partners_top-subtitle a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .partners .partners_bot {
+  height: 50%;
+  background: url("/image/bot_bg.png") top center/cover;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .partners .partners_bot .big_logo_partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .partners .partners_bot .big_logo_partners img {
+  padding: 0 10px 0 10px;
+}
+/*# sourceMappingURL=style.css.map */
