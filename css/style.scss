@@ -140,6 +140,9 @@
                                 display: inline-flex;
                                 align-items: center;
                                 justify-content: center;
+                                svg {
+                                    z-index: 9;
+                                }
                             }
                             .rhomb:after {
                                 content: "";
@@ -160,7 +163,7 @@
                                 z-index: 1;
                             }
                             .rhomb:hover:after {
-                                background-color: rgba($color: #f1e20c, $alpha: 0.8);
+                                background-color: rgba(255, 237, 0, 1);
                                 transition: 1s;
                             }
                             /* арифметика смещения элементов чётных строк */
@@ -173,111 +176,6 @@
                                 margin-left: calc(100px / 2 * 0.2071067811865475 + 20px);
                             }
                         }
-                        // .icon_grid {
-                        //     display: flex;
-                        //     justify-content: center;
-                        //     // display: grid;
-                        //     // grid-template-rows: 1fr 1fr 1fr 1fr;
-                        //     // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                        //     // row-gap: 0px;
-                        //     // column-gap: 0px;
-                        //     // height: 100%;
-                        //     .ico_items {
-                        //         display: flex;
-                        //         flex-wrap: wrap;
-                        //         /* максимум 3 ромба учитывая также margin 10px */
-                        //         width: calc(3 * 100px * 1.414213562373095 + 60px);
-                        //         outline: 2px dotted gray;
-                        //         .service_icon {
-                        //             width: 100px;
-                        //             height: 100px;
-                        //             position: relative;
-                        //             /* смещение чтобы не налезать на другие элементы */
-                        //             /* это аналогичино margin: calc(100px * (1.414213562373095 - 1) / 2) + 10px); */
-                        //             margin: calc(100px * 0.2071067811865475 + 10px);
-                        //             display: inline-flex;
-                        //             align-items: center;
-                        //             justify-content: center;
-                        //             background-color: rgba($color: #000000, $alpha: 0.4);
-                        //             border-radius: 15px;
-                        //             transition: 1s;
-                        //             &:after {
-                        //                 content: "";
-                        //                 /* абсолтное позиционирование */
-                        //                 position: absolute;
-                        //                 /* занимаем столько же места, сколько контейнер */
-                        //                 left: 0;
-                        //                 right: 0;
-                        //                 top: 0;
-                        //                 bottom: 0;
-                        //                 /* окрашиваем в нужный цвет */
-                        //                 background-color: red;
-                        //                 /* вращаем на 45 градусов */
-                        //                 transform: rotate(45deg);
-                        //                 /* отрицательный z-index, чтобы не перекрывать контент главного блока */
-                        //                 z-index: -1;
-                        //             }
-                        //             &:hover {
-                        //                 background-color: rgba($color: #f1e20c, $alpha: 0.8);
-                        //                 transition: 1s;
-                        //             }
-                        //         }
-                        //         #ico_item1 {
-                        //             grid-row-start: 1;
-                        //             grid-column-start: 1;
-                        //             grid-row-end: 2;
-                        //             grid-column-end: 2;
-                        //         }
-                        //         #ico_item2 {
-                        //             grid-row-start: 2;
-                        //             grid-column-start: 1;
-                        //             grid-row-end: 3;
-                        //             grid-column-end: 2;
-                        //         }
-                        //         #ico_item3 {
-                        //             grid-row-start: 2;
-                        //             grid-column-start: 2;
-                        //             grid-row-end: 3;
-                        //             grid-column-end: 3;
-                        //         }
-                        //         #ico_item4 {
-                        //             grid-row-start: 3;
-                        //             grid-column-start: 2;
-                        //             grid-row-end: 4;
-                        //             grid-column-end: 3;
-                        //         }
-                        //         #ico_item5 {
-                        //             grid-row-start: 2;
-                        //             grid-column-start: 3;
-                        //             grid-row-end: 3;
-                        //             grid-column-end: 4;
-                        //         }
-                        //         #ico_item6 {
-                        //             grid-row-start: 2;
-                        //             grid-column-start: 4;
-                        //             grid-row-end: 3;
-                        //             grid-column-end: 5;
-                        //         }
-                        //         #ico_item7 {
-                        //             grid-row-start: 3;
-                        //             grid-column-start: 4;
-                        //             grid-row-end: 4;
-                        //             grid-column-end: 5;
-                        //         }
-                        //         #ico_item8 {
-                        //             grid-row-start: 1;
-                        //             grid-column-start: 5;
-                        //             grid-row-end: 2;
-                        //             grid-column-end: 6
-                        //         }
-                        //         #ico_item9 {
-                        //             grid-row-start: 2;
-                        //             grid-column-start: 5;
-                        //             grid-row-end: 3;
-                        //             grid-column-end: 6;
-                        //         }
-                        //     }
-                        // }
                     }
                 }
                 //===== slide 4 ======

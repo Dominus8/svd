@@ -236,6 +236,10 @@
           justify-content: center;
 }
 
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb svg {
+  z-index: 9;
+}
+
 .section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb:after {
   content: "";
   /* абсолтное позиционирование */
@@ -258,7 +262,7 @@
 }
 
 .section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb:hover:after {
-  background-color: rgba(241, 226, 12, 0.8);
+  background-color: #ffed00;
   -webkit-transition: 1s;
   transition: 1s;
 }
