@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap");
 .section_wrappper .header {
   display: -webkit-box;
@@ -190,6 +191,86 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services {
+  /* арифметика смещения элементов чётных строк */
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhombs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhombs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* максимум 3 ромба учитывая также margin 10px */
+  width: calc(3 * 100px * 1.414213562373095 + 60px);
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  /* смещение чтобы не налезать на другие элементы */
+  /* это аналогичино margin: calc(100px * (1.414213562373095 - 1) / 2) + 10px); */
+  margin: calc(100px * 0.2071067811865475 + 10px);
+  /* стили для того чтобы элемент не занимал всю строку */
+  /* и для центрирования текста вертикально и горизонтально */
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb:after {
+  content: "";
+  /* абсолтное позиционирование */
+  position: absolute;
+  /* занимаем столько же места, сколько контейнер */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* окрашиваем в нужный цвет */
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  /* вращаем на 45 градусов */
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  /* отрицательный z-index, чтобы не перекрывать контент главного блока */
+  z-index: 1;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb:hover:after {
+  background-color: rgba(241, 226, 12, 0.8);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb--even-row {
+  margin-top: calc(-100px / 2 * 1.414213562373095 + 20px);
+  margin-left: calc(100px / 2 * (1.414213562373095 + 0.2071067811865475 * 2) + 20px);
+  margin-bottom: calc(-100px / 2 * 1.414213562373095 + 20px);
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb--even-row + .rhomb--even-row {
+  margin-left: calc(100px / 2 * 0.2071067811865475 + 20px);
 }
 
 .section_wrappper .body .swiper .swiper-wrapper .contacts .contacts_top {
