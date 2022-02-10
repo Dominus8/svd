@@ -217,6 +217,7 @@
 }
 
 .section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb {
+  position: relative;
   width: 100px;
   height: 100px;
   position: relative;
@@ -237,7 +238,28 @@
 }
 
 .section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb svg {
-  z-index: 9;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb .tooltip1 {
+  width: 600px;
+  padding: 10px 20px 10px 10px;
+  border: 1px solid #ffed00;
+  position: absolute;
+  color: aliceblue;
+  background-color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: 18px;
+  text-align: center;
+  border-radius: 15px;
+  z-index: 3;
+  -webkit-transition: 1s;
+  transition: 1s;
+  pointer-events: none;
+  opacity: 0;
+  left: 130px;
 }
 
 .section_wrappper .body .swiper .swiper-wrapper .services .services_bot .big_logo_services .rhomb:after {
