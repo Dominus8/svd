@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50%;
+    height: 100%;
     background-color: #FFED00;
 }
 
@@ -27,7 +27,7 @@
 }
 
 @mixin slide_bg($linck) {
-    height: 50%;
+    height: 100%;
     background: url($linck) top center/cover;
     background-color: #000000;
     display: flex;
@@ -49,7 +49,7 @@
             ul {
                 display: flex;
                 text-decoration: none;
-                li {
+                .nav_el {
                     cursor: pointer;
                     font-family: 'Roboto', sans-serif;
                     font-size: 18px;
@@ -57,17 +57,20 @@
                     list-style-type: none;
                     margin-right: 13px;
                 }
+                .nav_el--active {
+                    color: #FFED00;
+                }
             }
         }
     }
     .body {
-        height: 980px;
-        .swiper {
-            .swiper-wrapper {
-                height: 93vh;
+        height: 90vh;
+        .swiper-top {
+            .swt {
+                height: 45vh;
                 //===== slide 1 ======
-                .about {
-                    .about_top {
+                .about-st {
+                    .about-st_top {
                         @include slide_top();
                         .about_top-title {
                             @include slide_top_title();
@@ -76,17 +79,10 @@
                             @include slide_top_subtitle();
                         }
                     }
-                    .about_bot {
-                        @include slide_bg("/image/bot_bg.png");
-                        .big_logo_about {
-                            padding-top: 35px;
-                            img {}
-                        }
-                    }
                 }
                 //===== slide 2 ======
-                .we_can {
-                    .we_can_top {
+                .we_can-st {
+                    .we_can-st_top {
                         @include slide_top();
                         .we_can_top-title {
                             @include slide_top_title();
@@ -95,13 +91,10 @@
                             @include slide_top_subtitle();
                         }
                     }
-                    .we_can_bot {
-                        @include slide_bg("/image/we_can_bg.png");
-                    }
                 }
                 //===== slide 3 ======
-                .services {
-                    .services_top {
+                .services-st {
+                    .services-st_top {
                         @include slide_top();
                         .services_top-title {
                             @include slide_top_title();
@@ -115,7 +108,63 @@
                             }
                         }
                     }
-                    .services_bot {
+                }
+                //===== slide 4 ======
+                .contacts-st {
+                    .contacts-st_top {
+                        @include slide_top();
+                        .contacts_top-title {
+                            @include slide_top_title();
+                        }
+                        .contacts_top-subtitle {
+                            @include slide_top_subtitle();
+                            a {
+                                color: #000000;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                //===== slide 5 ======
+                .partners-st {
+                    .partners-st_top {
+                        @include slide_top();
+                        .partners_top-title {
+                            @include slide_top_title();
+                        }
+                        .partners_top-subtitle {
+                            @include slide_top_subtitle();
+                            a {
+                                color: #000000;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-bot {
+            .swb {
+                height: 45vh;
+                //===== slide 1 ======
+                .about-sb {
+                    .about-sb_bot {
+                        @include slide_bg("/image/bot_bg.png");
+                        .big_logo_about {
+                            padding-top: 35px;
+                            img {}
+                        }
+                    }
+                }
+                //===== slide 2 ======
+                .we_can-sb {
+                    .we_can-sb_bot {
+                        @include slide_bg("/image/we_can_bg.png");
+                    }
+                }
+                //===== slide 3 ======
+                .services-sb {
+                    .services-sb_bot {
                         @include slide_bg("/image/services_bg.png");
                         .big_logo_services {
                             .rhombs-container {
@@ -199,40 +248,14 @@
                     }
                 }
                 //===== slide 4 ======
-                .contacts {
-                    .contacts_top {
-                        @include slide_top();
-                        .contacts_top-title {
-                            @include slide_top_title();
-                        }
-                        .contacts_top-subtitle {
-                            @include slide_top_subtitle();
-                            a {
-                                color: #000000;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                    .contacts_bot {
+                .contacts-sb {
+                    .contacts-sb_bot {
                         @include slide_bg("/image/contacts_bg.png");
                     }
                 }
                 //===== slide 5 ======
-                .partners {
-                    .partners_top {
-                        @include slide_top();
-                        .partners_top-title {
-                            @include slide_top_title();
-                        }
-                        .partners_top-subtitle {
-                            @include slide_top_subtitle();
-                            a {
-                                color: #000000;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                    .partners_bot {
+                .partners-sb {
+                    .partners-sb_bot {
                         @include slide_bg("/image/bot_bg.png");
                         .big_logo_partners {
                             display: flex;
