@@ -66,3 +66,28 @@ $('.tooslide5').click(function(e) {
     $(this).addClass('nav_el--active');
     swiperTop.slideTo($('.partners-st').index(), 700, false);
 });
+
+
+swiperTop.on('activeIndexChange', function() {
+
+    if (swiperTop.activeIndex == 0) {
+        $(".nav .nav_el--active").removeClass('nav_el--active');
+        $('.tooslide1').addClass('nav_el--active');
+    };
+    if (swiperTop.activeIndex == 1) {
+        $(".nav .nav_el--active").removeClass('nav_el--active');
+        $('.tooslide2').addClass('nav_el--active');
+    };
+    if (swiperTop.activeIndex == 2) {
+        $(".nav .nav_el--active").removeClass('nav_el--active');
+        $('.tooslide3').addClass('nav_el--active');
+    };
+    if (swiperTop.activeIndex == 3) {
+        $(".nav .nav_el--active").removeClass('nav_el--active');
+        $('.tooslide4').addClass('nav_el--active');
+    };
+    if (swiperTop.activeIndex == 4) {
+        $(".nav .nav_el--active").removeClass('nav_el--active');
+        $('.tooslide5').addClass('nav_el--active');
+    };
+});
