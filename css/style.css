@@ -188,6 +188,10 @@
   font-weight: 500;
   font-style: 18px;
   max-width: 500px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .section_wrappper .body .swiper-top .swt .services-st .services-st_top .services_top-subtitle {
@@ -377,26 +381,6 @@
   pointer-events: none;
 }
 
-.section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb .tooltip1 {
-  width: 600px;
-  padding: 10px 20px 10px 10px;
-  border: 1px solid #ffed00;
-  position: absolute;
-  color: aliceblue;
-  background-color: #000000;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-style: 18px;
-  text-align: center;
-  border-radius: 15px;
-  z-index: 3;
-  -webkit-transition: 1s;
-  transition: 1s;
-  pointer-events: none;
-  opacity: 0;
-  left: 130px;
-}
-
 .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb:after {
   content: "";
   /* абсолтное позиционирование */
@@ -418,7 +402,11 @@
   z-index: 1;
 }
 
-.section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb:hover:after {
+.section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb--active svg g .flipcolor {
+  fill: #000000;
+}
+
+.section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb--active::after {
   background-color: #ffed00;
   -webkit-transition: 1s;
   transition: 1s;

@@ -171,6 +171,8 @@
                         @include slide_top();
                         .services_top-title {
                             @include slide_top_title();
+                            transition-property: all;
+                            transition: 1s;
                         }
                         .services_top-subtitle {
                             @include slide_top_subtitle();
@@ -267,24 +269,24 @@
                                     z-index: 2;
                                     pointer-events: none;
                                 }
-                                .tooltip1 {
-                                    width: 600px;
-                                    padding: 10px 20px 10px 10px;
-                                    border: 1px solid rgba(255, 237, 0, 1);
-                                    position: absolute;
-                                    color: aliceblue;
-                                    background-color: #000000;
-                                    font-family: 'Roboto', sans-serif;
-                                    font-weight: 500;
-                                    font-style: 18px;
-                                    text-align: center;
-                                    border-radius: 15px;
-                                    z-index: 3;
-                                    transition: 1s;
-                                    pointer-events: none;
-                                    opacity: 0;
-                                    left: 130px;
-                                }
+                                // .tooltip1 {
+                                //     width: 600px;
+                                //     padding: 10px 20px 10px 10px;
+                                //     border: 1px solid rgba(255, 237, 0, 1);
+                                //     position: absolute;
+                                //     color: aliceblue;
+                                //     background-color: #000000;
+                                //     font-family: 'Roboto', sans-serif;
+                                //     font-weight: 500;
+                                //     font-style: 18px;
+                                //     text-align: center;
+                                //     border-radius: 15px;
+                                //     z-index: 3;
+                                //     transition: 1s;
+                                //     pointer-events: none;
+                                //     opacity: 0;
+                                //     left: 130px;
+                                // }
                             }
                             .rhomb:after {
                                 content: "";
@@ -304,9 +306,18 @@
                                 /* отрицательный z-index, чтобы не перекрывать контент главного блока */
                                 z-index: 1;
                             }
-                            .rhomb:hover:after {
-                                background-color: rgba(255, 237, 0, 1);
-                                transition: 1s;
+                            .rhomb--active {
+                                svg {
+                                    g {
+                                        .flipcolor {
+                                            fill: #000000;
+                                        }
+                                    }
+                                }
+                                &::after {
+                                    background-color: rgba(255, 237, 0, 1);
+                                    transition: 1s;
+                                }
                             }
                             /* арифметика смещения элементов чётных строк */
                             .rhomb--even-row {
