@@ -598,11 +598,15 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile .contacts-sb_bot .big_logo_contacts .contacts_logo--mobile {
+    width: 280px;
+    height: auto;
+  }
   .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile .contacts-sb_bot .big_logo_contacts .contacts_ico_wrapper {
     padding-top: 10px;
     display: -ms-grid;
     display: grid;
-    grid: 50% 50% / 50% 50%;
+    grid: 100% /25% 25% 25% 25%;
     gap: 10px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -611,8 +615,22 @@
             align-items: center;
   }
   .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile .contacts-sb_bot .big_logo_contacts .contacts_ico_wrapper .contacts_ico--mobile {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 425px) {
+  .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile .contacts-sb_bot .big_logo_contacts .contacts_logo--mobile {
+    width: 240px;
+    height: auto;
+  }
+  .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile .contacts-sb_bot .big_logo_contacts .contacts_ico_wrapper {
+    gap: 5px;
+  }
+  .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile .contacts-sb_bot .big_logo_contacts .contacts_ico_wrapper .contacts_ico--mobile {
+    width: 60px;
+    height: 60px;
   }
 }
 
