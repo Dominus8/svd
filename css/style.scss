@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: #FFED00;
+    background-color: #FFF89B;
 }
 
 @mixin slide_top_title {
@@ -34,6 +34,10 @@
     justify-content: center;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 //===================================== main scss ===============================================
 .section_wrappper {
     .header {
@@ -57,17 +61,24 @@
                     list-style-type: none;
                     margin-right: 13px;
                     .nav_text {}
+                    &:focus {
+                        outline: none;
+                    }
                 }
                 img {
                     border-radius: 25px;
                     display: none;
                     width: 32px;
                     height: 32px;
+                    &:focus {
+                        outline: none;
+                    }
                 }
                 .nav_el--active {
-                    color: #FFED00;
+                    border-radius: 25px;
+                    color: #FFF89B;
                     img {
-                        background-color: #FFED00;
+                        background-color: #FFF89B;
                     }
                 }
             }
@@ -92,6 +103,7 @@
             .nav {
                 ul {
                     .nav_el {
+                        border-radius: 25px;
                         font-size: 16px;
                         margin-right: 13px;
                         .nav_text {
@@ -315,8 +327,25 @@
                                     }
                                 }
                                 &::after {
-                                    background-color: rgba(255, 237, 0, 1);
+                                    background-color: rgba(255, 248, 155, 1);
                                     transition: 1s;
+                                    animation-duration: 3s;
+                                    animation-name: pulse;
+                                    animation-iteration-count: infinite;
+                                    @keyframes pulse {
+                                        from {
+                                            border: 2px solid rgba(255, 248, 155, 1);
+                                            background-color: rgba(255, 248, 155, 1);
+                                        }
+                                        to {
+                                            border: 2px solid rgba(255, 248, 155, 1);
+                                            background-color: rgba(255, 248, 155, 1);
+                                        }
+                                        50% {
+                                            border: 2px solid rgb(0, 0, 0);
+                                            background-color: rgba(100%, 93%, 0%, 1);
+                                        }
+                                    }
                                 }
                             }
                             /* арифметика смещения элементов чётных строк */
@@ -331,10 +360,115 @@
                         }
                     }
                 }
+                @media (max-width: 480px) {
+                    .services-sb {
+                        .services-sb_bot {
+                            .big_logo_services {
+                                padding-top: 50px;
+                                .rhombs-container {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                .rhombs {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    /* максимум 3 ромба учитывая также margin 10px */
+                                    width: calc(3 * 60px * 1.414213562373095 + 60px);
+                                }
+                                .rhomb {
+                                    position: relative;
+                                    width: 60px;
+                                    height: 60px;
+                                    position: relative;
+                                    /* смещение чтобы не налезать на другие элементы */
+                                    /* это аналогичино margin: calc(60px * (1.414213562373095 - 1) / 2) + 10px); */
+                                    margin: calc(60px * 0.2071067811865475 + 10px);
+                                    /* стили для того чтобы элемент не занимал всю строку */
+                                    /* и для центрирования текста вертикально и горизонтально */
+                                    display: inline-flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    svg {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                }
+                                .rhomb:after {
+                                    content: "";
+                                    /* абсолтное позиционирование */
+                                    position: absolute;
+                                    /* занимаем столько же места, сколько контейнер */
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    /* окрашиваем в нужный цвет */
+                                    background-color: rgba($color: #000000, $alpha: 0.4);
+                                    border-radius: 15px;
+                                    transition: 1s;
+                                    /* вращаем на 45 градусов */
+                                    transform: rotate(45deg);
+                                    /* отрицательный z-index, чтобы не перекрывать контент главного блока */
+                                    z-index: 1;
+                                }
+                                .rhomb--active {
+                                    svg {
+                                        g {
+                                            .flipcolor {}
+                                        }
+                                    }
+                                    &::after {}
+                                }
+                                /* арифметика смещения элементов чётных строк */
+                                .rhomb--even-row {
+                                    margin-top: calc(-60px / 2 * 1.414213562373095 + 20px);
+                                    margin-left: calc(60px / 2 * (1.414213562373095 + 0.2071067811865475 * 2) + 20px);
+                                    margin-bottom: calc(-60px / 2 * 1.414213562373095 + 20px);
+                                }
+                                .rhomb--even-row+.rhomb--even-row {
+                                    margin-left: calc(60px / 2 * 0.2071067811865475 + 20px);
+                                }
+                            }
+                        }
+                    }
+                }
                 //===== slide 4 ======
                 .contacts-sb {
                     .contacts-sb_bot {
                         @include slide_bg("/image/contacts_bg.png");
+                    }
+                }
+                .contacts-sb--mobile {
+                    display: none;
+                }
+                @media (max-width: 768px) {
+                    .contacts-sb {
+                        display: none;
+                    }
+                    .contacts-sb--mobile {
+                        display: block;
+                        .contacts-sb_bot {
+                            padding-top: 10px;
+                            @include slide_bg("/image/bot_bg.png");
+                            .big_logo_contacts {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                align-items: center;
+                                .contacts_ico_wrapper {
+                                    padding-top: 10px;
+                                    display: grid;
+                                    grid: 50% 50% / 50% 50%;
+                                    gap: 10px;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    .contacts_ico--mobile {
+                                        width: 120px;
+                                        height: 120px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 //===== slide 5 ======

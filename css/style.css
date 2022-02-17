@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap");
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .section_wrappper .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,6 +38,10 @@
   margin-right: 13px;
 }
 
+.section_wrappper .header .nav ul .nav_el:focus {
+  outline: none;
+}
+
 .section_wrappper .header .nav ul img {
   border-radius: 25px;
   display: none;
@@ -41,12 +49,17 @@
   height: 32px;
 }
 
+.section_wrappper .header .nav ul img:focus {
+  outline: none;
+}
+
 .section_wrappper .header .nav ul .nav_el--active {
-  color: #FFED00;
+  border-radius: 25px;
+  color: #FFF89B;
 }
 
 .section_wrappper .header .nav ul .nav_el--active img {
-  background-color: #FFED00;
+  background-color: #FFF89B;
 }
 
 @media (max-width: 760px) {
@@ -58,6 +71,7 @@
 
 @media (max-width: 490px) {
   .section_wrappper .header .nav ul .nav_el {
+    border-radius: 25px;
     font-size: 16px;
     margin-right: 13px;
   }
@@ -110,7 +124,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  background-color: #FFED00;
+  background-color: #FFF89B;
 }
 
 .section_wrappper .body .swiper-top .swt .about-st .about-st_top .about_top-title {
@@ -145,7 +159,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  background-color: #FFED00;
+  background-color: #FFF89B;
 }
 
 .section_wrappper .body .swiper-top .swt .we_can-st .we_can-st_top .we_can_top-title {
@@ -180,7 +194,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  background-color: #FFED00;
+  background-color: #FFF89B;
 }
 
 .section_wrappper .body .swiper-top .swt .services-st .services-st_top .services_top-title {
@@ -225,7 +239,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  background-color: #FFED00;
+  background-color: #FFF89B;
 }
 
 .section_wrappper .body .swiper-top .swt .contacts-st .contacts-st_top .contacts_top-title {
@@ -265,7 +279,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  background-color: #FFED00;
+  background-color: #FFF89B;
 }
 
 .section_wrappper .body .swiper-top .swt .partners-st .partners-st_top .partners_top-title {
@@ -407,9 +421,45 @@
 }
 
 .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb--active::after {
-  background-color: #ffed00;
+  background-color: #fff89b;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    border: 2px solid #fff89b;
+    background-color: #fff89b;
+  }
+  to {
+    border: 2px solid #fff89b;
+    background-color: #fff89b;
+  }
+  50% {
+    border: 2px solid black;
+    background-color: #ffed00;
+  }
+}
+
+@keyframes pulse {
+  from {
+    border: 2px solid #fff89b;
+    background-color: #fff89b;
+  }
+  to {
+    border: 2px solid #fff89b;
+    background-color: #fff89b;
+  }
+  50% {
+    border: 2px solid black;
+    background-color: #ffed00;
+  }
 }
 
 .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb--even-row {
@@ -422,6 +472,82 @@
   margin-left: calc(100px / 2 * 0.2071067811865475 + 20px);
 }
 
+@media (max-width: 480px) {
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services {
+    padding-top: 50px;
+    /* арифметика смещения элементов чётных строк */
+  }
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhombs-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhombs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    /* максимум 3 ромба учитывая также margin 10px */
+    width: calc(3 * 60px * 1.414213562373095 + 60px);
+  }
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    /* смещение чтобы не налезать на другие элементы */
+    /* это аналогичино margin: calc(60px * (1.414213562373095 - 1) / 2) + 10px); */
+    margin: calc(60px * 0.2071067811865475 + 10px);
+    /* стили для того чтобы элемент не занимал всю строку */
+    /* и для центрирования текста вертикально и горизонтально */
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb svg {
+    width: 40px;
+    height: 40px;
+  }
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb:after {
+    content: "";
+    /* абсолтное позиционирование */
+    position: absolute;
+    /* занимаем столько же места, сколько контейнер */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* окрашиваем в нужный цвет */
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    /* вращаем на 45 градусов */
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    /* отрицательный z-index, чтобы не перекрывать контент главного блока */
+    z-index: 1;
+  }
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb--even-row {
+    margin-top: calc(-60px / 2 * 1.414213562373095 + 20px);
+    margin-left: calc(60px / 2 * (1.414213562373095 + 0.2071067811865475 * 2) + 20px);
+    margin-bottom: calc(-60px / 2 * 1.414213562373095 + 20px);
+  }
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb--even-row + .rhomb--even-row {
+    margin-left: calc(60px / 2 * 0.2071067811865475 + 20px);
+  }
+}
+
 .section_wrappper .body .swiper-bot .swb .contacts-sb .contacts-sb_bot {
   height: 100%;
   background: url("/image/contacts_bg.png") top center/cover;
@@ -432,6 +558,62 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.section_wrappper .body .swiper-bot .swb .contacts-sb--mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .section_wrappper .body .swiper-bot .swb .contacts-sb {
+    display: none;
+  }
+  .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile {
+    display: block;
+  }
+  .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile .contacts-sb_bot {
+    padding-top: 10px;
+    height: 100%;
+    background: url("/image/bot_bg.png") top center/cover;
+    background-color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile .contacts-sb_bot .big_logo_contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile .contacts-sb_bot .big_logo_contacts .contacts_ico_wrapper {
+    padding-top: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid: 50% 50% / 50% 50%;
+    gap: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section_wrappper .body .swiper-bot .swb .contacts-sb--mobile .contacts-sb_bot .big_logo_contacts .contacts_ico_wrapper .contacts_ico--mobile {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .section_wrappper .body .swiper-bot .swb .partners-sb .partners-sb_bot {
