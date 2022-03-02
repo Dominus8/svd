@@ -7,6 +7,7 @@ let swiperTop = new Swiper('.swiper-top', {
     loop: false,
     mousewheel: true,
     allowTouchMove: true,
+    simulateTouch: false,
 
     // Navigation arrows
     // navigation: {
@@ -22,6 +23,7 @@ let SwiperBot = new Swiper('.swiper-bot', {
     loop: false,
     mousewheel: true,
     speed: 700,
+    simulateTouch: false,
 
     // Navigation arrows
     // navigation: {

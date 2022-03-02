@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
 * {
   -webkit-tap-highlight-color: transparent;
 }
@@ -55,11 +56,11 @@
 
 .section_wrappper .header .nav ul .nav_el--active {
   border-radius: 25px;
-  color: #FFF89B;
+  color: #FFF140;
 }
 
 .section_wrappper .header .nav ul .nav_el--active img {
-  background-color: #FFF89B;
+  background-color: #FFF140;
 }
 
 @media (max-width: 760px) {
@@ -109,7 +110,7 @@
 
 .section_wrappper .body .swiper-top .swt .about-st .about-st_top {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orelega One', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,27 +125,27 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  background-color: #FFF89B;
+  background-color: #FFF140;
 }
 
 .section_wrappper .body .swiper-top .swt .about-st .about-st_top .about_top-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orelega One', sans-serif;
   font-weight: 500;
-  font-style: 18px;
+  font-size: 20px;
   max-width: 500px;
 }
 
 .section_wrappper .body .swiper-top .swt .about-st .about-st_top .about_top-subtitle {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: lighter;
+  font-size: 14px;
   padding-top: 70px;
   max-width: 500px;
 }
 
 .section_wrappper .body .swiper-top .swt .we_can-st .we_can-st_top {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orelega One', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,27 +160,27 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  background-color: #FFF89B;
+  background-color: #FFF140;
 }
 
 .section_wrappper .body .swiper-top .swt .we_can-st .we_can-st_top .we_can_top-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orelega One', sans-serif;
   font-weight: 500;
-  font-style: 18px;
+  font-size: 20px;
   max-width: 500px;
 }
 
 .section_wrappper .body .swiper-top .swt .we_can-st .we_can-st_top .we_can_top-subtitle {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: lighter;
+  font-size: 14px;
   padding-top: 70px;
   max-width: 500px;
 }
 
 .section_wrappper .body .swiper-top .swt .services-st .services-st_top {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orelega One', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,13 +195,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  background-color: #FFF89B;
+  background-color: #FFF140;
 }
 
 .section_wrappper .body .swiper-top .swt .services-st .services-st_top .services_top-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orelega One', sans-serif;
   font-weight: 500;
-  font-style: 18px;
+  font-size: 20px;
   max-width: 500px;
   -webkit-transition-property: all;
   transition-property: all;
@@ -210,8 +211,8 @@
 
 .section_wrappper .body .swiper-top .swt .services-st .services-st_top .services_top-subtitle {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: lighter;
+  font-size: 14px;
   padding-top: 70px;
   max-width: 500px;
 }
@@ -224,7 +225,7 @@
 
 .section_wrappper .body .swiper-top .swt .contacts-st .contacts-st_top {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orelega One', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,20 +240,20 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  background-color: #FFF89B;
+  background-color: #FFF140;
 }
 
 .section_wrappper .body .swiper-top .swt .contacts-st .contacts-st_top .contacts_top-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orelega One', sans-serif;
   font-weight: 500;
-  font-style: 18px;
+  font-size: 20px;
   max-width: 500px;
 }
 
 .section_wrappper .body .swiper-top .swt .contacts-st .contacts-st_top .contacts_top-subtitle {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: lighter;
+  font-size: 14px;
   padding-top: 70px;
   max-width: 500px;
 }
@@ -264,7 +265,7 @@
 
 .section_wrappper .body .swiper-top .swt .partners-st .partners-st_top {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orelega One', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,20 +280,20 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  background-color: #FFF89B;
+  background-color: #FFF140;
 }
 
 .section_wrappper .body .swiper-top .swt .partners-st .partners-st_top .partners_top-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Orelega One', sans-serif;
   font-weight: 500;
-  font-style: 18px;
+  font-size: 20px;
   max-width: 500px;
 }
 
 .section_wrappper .body .swiper-top .swt .partners-st .partners-st_top .partners_top-subtitle {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: lighter;
+  font-size: 14px;
   padding-top: 70px;
   max-width: 500px;
 }
