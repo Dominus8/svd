@@ -415,6 +415,41 @@
           transform: rotate(45deg);
   /* отрицательный z-index, чтобы не перекрывать контент главного блока */
   z-index: 1;
+  transition: 1s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: animations;
+          animation-name: animations;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animations {
+  from {
+    border: 2px solid rgba(122, 161, 245, 0.486);
+  }
+  to {
+    border: 2px solid rgba(5, 12, 73, 0.842);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    border: 2px solid #fff89b;
+    background-color: rgba(8, 31, 73, 0.301);
+  }
+}
+
+@keyframes animations {
+  from {
+    border: 2px solid rgba(122, 161, 245, 0.486);
+  }
+  to {
+    border: 2px solid rgba(5, 12, 73, 0.842);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    border: 2px solid #fff89b;
+    background-color: rgba(8, 31, 73, 0.301);
+  }
 }
 
 .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhomb--active svg g .flipcolor {
