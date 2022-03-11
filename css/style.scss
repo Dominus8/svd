@@ -225,6 +225,11 @@
                             a {
                                 color: #000000;
                                 text-decoration: none;
+                                transition: 0.5s;
+                                &:hover {
+                                    font-size: 18px;
+                                    color: #131ec4;
+                                }
                             }
                         }
                     }
@@ -469,11 +474,6 @@
                                     .contacts_ico--mobile {
                                         width: 80px;
                                         height: 80px;
-                                        a {
-                                            display: flex;
-                                            justify-content: center;
-                                            img {}
-                                        }
                                     }
                                 }
                             }
@@ -504,11 +504,15 @@
                 .partners-sb {
                     .partners-sb_bot {
                         @include slide_bg("/image/bot_bg.png");
+                        padding-top: 10px;
                         .big_logo_partners {
-                            display: flex;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr;
+                            grid-template-rows: 1fr 1fr;
                             justify-content: space-around;
                             align-items: center;
                             img {
+                                height: 150px;
                                 padding: 0 10px 0 10px;
                             }
                         }
