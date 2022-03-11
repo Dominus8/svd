@@ -469,6 +469,11 @@
                                     .contacts_ico--mobile {
                                         width: 80px;
                                         height: 80px;
+                                        a {
+                                            display: flex;
+                                            justify-content: center;
+                                            img {}
+                                        }
                                     }
                                 }
                             }
