@@ -1,3 +1,21 @@
+let swiperpartners425 = new Swiper('.swiper-partners425', {
+    // Optional parameters
+
+    speed: 700,
+    // slidesPerView: 1,
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 10,
+
+
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
+
 let swiperTop = new Swiper('.swiper-top', {
     // Optional parameters
     effect: 'fade',
