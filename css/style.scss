@@ -259,7 +259,54 @@
                     .services-sb_bot {
                         @include slide_bg("/image/services_bg.png");
                         .big_logo_services {
+                            display: flex;
+                            align-items: start;
+                            justify-content: center;
+                            .listService {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                border: 2px solid black;
+                                border-radius: 25px;
+                                background-color: rgba(58, 58, 58, 0.493);
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                width: 450px;
+                                height: 380px;
+                                list-style-type: none;
+                                color: antiquewhite;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: lighter;
+                                font-size: 24px;
+                                text-align: center;
+                                li {
+                                    margin-bottom: 10px;
+                                    border: none;
+                                    border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+                                }
+                            }
+                            @media (max-width: 1440px) {
+                                .listService {
+                                    width: 350px;
+                                    height: 380px;
+                                    font-size: 18px;
+                                }
+                            }
+                            @media (max-width: 1024px) {
+                                .listService {
+                                    width: 200px;
+                                    height: 380px;
+                                    font-size: 16px;
+                                }
+                            }
+                            @media (max-width: 768px) {
+                                .listService {
+                                    display: none;
+                                }
+                            }
                             .rhombs-container {
+                                margin: 0 20px;
                                 display: flex;
                                 justify-content: center;
                             }

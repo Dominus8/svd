@@ -345,10 +345,77 @@
 }
 
 .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /* арифметика смещения элементов чётных строк */
 }
 
+.section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .listService {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: rgba(58, 58, 58, 0.493);
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 450px;
+  height: 380px;
+  list-style-type: none;
+  color: antiquewhite;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  text-align: center;
+}
+
+.section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .listService li {
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+}
+
+@media (max-width: 1440px) {
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .listService {
+    width: 350px;
+    height: 380px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .listService {
+    width: 200px;
+    height: 380px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .listService {
+    display: none;
+  }
+}
+
 .section_wrappper .body .swiper-bot .swb .services-sb .services-sb_bot .big_logo_services .rhombs-container {
+  margin: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
