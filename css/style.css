@@ -757,11 +757,15 @@
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section_wrappper .body .swiper-bot .swb .partners-sb .partners-sb_bot .big_logo_partners img {
   padding: 2px;
-  height: 150px;
+  max-height: 150px;
+  max-width: 300px;
   padding: 0 10px 0 10px;
   border-radius: 25px;
 }

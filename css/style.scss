@@ -558,9 +558,11 @@
                             grid-template-columns: 1fr 1fr 1fr;
                             grid-template-rows: 1fr 1fr;
                             justify-items: center;
+                            align-items: center;
                             img {
                                 padding: 2px;
-                                height: 150px;
+                                max-height: 150px;
+                                max-width: 300px;
                                 padding: 0 10px 0 10px;
                                 // background-color: rgba($color: #000000, $alpha: 0.4);
                                 // border: solid 1px rgba(255, 248, 155, 1);
